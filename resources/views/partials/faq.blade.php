@@ -1,18 +1,5 @@
 
-<?php
-include_once('head.php');
-?>
-<title>Preguntas Frecuentes</title>
-  </head>
-<?php
-// serchbar
-include_once('serchbar.php');
 
-
-// navbar
-/*  include_once('navbar.php');*/
-
-?>
   <body>
      <div class=" container " >
       <div class="titulo card-header text-center justify-content-center" style="background-color: #0279f6;" >
@@ -163,5 +150,3 @@ include_once('serchbar.php');
         </div>
     </div>
 </div>
-<?php include_once('footer.php'); ?>
-<?php include_once('script.php'); ?>

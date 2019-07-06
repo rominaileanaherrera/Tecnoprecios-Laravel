@@ -7,7 +7,7 @@
   <div class="row d-flex text-center justify-content-center mb-md-0 mb-4" id="footerLinks">
     <div class="col-md-2 mb-3">
       <h6 class="text-uppercase font-weight-bold">
-        <a href="index.php">INICIO</a>
+        <a href="/">INICIO</a>
       </h6>
     </div>
     <!-- Grid column -->
@@ -31,7 +31,7 @@
     <!-- Grid column -->
     <div class="col-md-2 mb-3">
       <h6 class="text-uppercase font-weight-bold">
-        <a href="faq.php">Preguntas Frecuentes</a>
+        <a href="/faq">Preguntas Frecuentes</a>
       </h6>
     </div>
     <!-- Grid column -->
