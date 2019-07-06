@@ -1,0 +1,16 @@
+
+  #sesion{
+      width: 300px;
+      height: 300px;
+      border-radius: 150px;
+  }
+
+  .formatoform{
+    border-radius: 20px;
+    line-height: 40px;
+  }
+
+  .__h1form{
+    text-align: center;
+    color: #0279f6;
+  } 

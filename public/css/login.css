@@ -1,0 +1,59 @@
+/* login.php y registrate.php */
+
+
+body{
+    text-align: center;
+}
+
+
+
+  .articulo1{
+    height: 100vh;
+  }
+  .form1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+  
+  .formatoform{
+      border-radius: 20px;
+      line-height: 40px;
+      
+  }
+  .__h1form , .__h3form{
+    text-align: center;
+    color: #0279f6;
+  } 
+  
+  .__h4login, .__h4registro{
+    text-align: center;
+    color: #0279f6;
+    font-size: 1em;
+  }
+  .__h4login{
+    font-weight: 300;
+    font-size: 1.5em;
+  }
+  
+  .__h4login :hover{
+    text-decoration: underline;
+  }
+  .borrar{
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+  
+  .login{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  
+  
+  @media (max-width: 992px){
+    .imglateral{
+    display: none;
+    }
+  } 
+    

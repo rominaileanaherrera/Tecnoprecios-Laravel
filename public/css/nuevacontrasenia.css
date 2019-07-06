@@ -1,0 +1,15 @@
+
+  
+  body{
+    text-align: center;
+  }
+
+.__h3, .__h1{
+    text-align: center;
+    color: #0279f6;
+  }
+
+   .formatoform :hover{
+    text-decoration: none;
+    color: white;
+   }

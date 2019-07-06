@@ -1,0 +1,103 @@
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 auto;
+}
+.container{
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+   
+}
+
+/* faq's */
+.search{
+    width:100%;
+    position: relative;
+  }
+  .footer{
+    align-items: center;
+  }
+  #footerIconos, #footerAll, #footerLinks{
+    background-color:#0279f6;
+    color: #fff;
+  }
+  #footerLinks div h6 a{
+    color : #fff;
+  }
+  .ins-ic > i, .fb-ic > i, .tw-ic > i{
+    color: white!important;
+  }
+  .img-fluid{
+    background-color: #0279f6;
+  }  
+
+
+/* login.php y registrate.php */
+.articulo1{
+  height: 100vh;
+}
+.form1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.formatoform{
+    border-radius: 20px;
+    line-height: 40px;
+    
+}
+.__h1form , .__h3form{
+  text-align: center;
+  color: #0279f6;
+} 
+
+.__h4login, .__h4registro{
+  text-align: center;
+  color: #0279f6;
+  font-size: 1em;
+}
+.__h4login{
+  font-weight: 100;
+}
+
+.__h4login :hover{
+  text-decoration: underline;
+}
+.borrar{
+  padding-left: 36px;
+  padding-right: 36px;
+}
+
+
+
+
+
+
+
+
+
+/* footer */
+
+footer{
+	background-color: #0279f6;
+	display: block;
+	width: 100%;
+	text-align: center;
+	height: 120px;
+}
+
+
+  
+  
+
+
+
+    
+  
+
+
+  

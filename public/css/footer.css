@@ -1,0 +1,14 @@
+
+  .footer{
+    align-items: center;
+  }
+  #footerIconos, #footerAll, #footerLinks{
+    background-color:#0279f6;
+    color: #fff;
+  }
+  #footerLinks div h6 a{
+    color : #fff;
+  }
+  .ins-ic-footer > i, .fb-ic-footer > i, .tw-ic-footer > i{
+    color: white!important;
+  }  
