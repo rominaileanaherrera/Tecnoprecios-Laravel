@@ -1,19 +1,4 @@
-<?php 
-
-require_once("autoload.php");
-// head
-include_once('head.php');
-
-// serchbar
-
-if (isset($_SESSION["email"])){
-    include_once('searchbar5.php');
-}else{
-    include_once('serchbar.php');
-}
-// navbar
-//include_once('navbar.php');
-
+{{-- 
 
 // poner el mensaje que luego guardo para ver si estoy subiendo bien 
 $msg = "";
@@ -31,10 +16,10 @@ $msg = "";
 			$price = $_POST['price'];
 
   	// donde guardamos la imagen 
-		$target = "img/products".basename($image);
+		$target = "img/".basename($image);
  
 
-		$sql = "INSERT INTO products (image, title, price) VALUES ('$image', '$title', '$price')";
+		$sql = "INSERT INTO products (image, title, price,id_class) VALUES ('$image', '$title', '$price','$categoria')";
 		$query= $pdo ->prepare($sql);
 		$query -> execute();
 
@@ -57,17 +42,8 @@ $msg = "";
 		}
 	}
 	// var_dump ($msg);
+ --}}
 
-
-
-// ejecuta el querry en la base de datos 
-
-
-	$sql= "SELECT *  FROM products";
-	$consulta = $pdo->query($sql);
-	$producto = $consulta->fetchAll(PDO::FETCH_ASSOC);
-
-	 ?> 
 
 <!doctype html>
 <html lang="es">
@@ -77,6 +53,8 @@ $msg = "";
 </head>
 <body>
 
+
+
 <div id="content">
 
 <div class="container-fluid p-0">
@@ -84,17 +62,17 @@ $msg = "";
 
 <section class= "productos" id="wrap">
 <div id="columns" class="columns_4">
-
-<?php foreach ($producto as $key => $value)  :?>
+@foreach ($products as $product ) 
+{{-- $pi={{$product->image}} --}}
 <figure>
-          <img src="<?="img/products".$value["image"]?>">
+          <img src="/img/{{$product->image}}">
 
-          <figcaption><?=$value["title"]?></figcaption>
-          <span class="price"><?=$value["price"]?></span>
+          <figcaption>{{$product->tittle}}</figcaption>
+          <span class="price">${{$product->price}}</span>
           <a class="button" href="#">Comprar ahora</a>
-        </figure>
+ </figure>
 
-        <?php endforeach ?>
+@endforeach 
 
 </div>
 </section>
@@ -124,16 +102,20 @@ $msg = "";
       	name="price" 
       	placeholder="precio"></textarea>
   	</div>
+		<div>
+      <textarea 
+      	id="text" 
+      	cols="40" 
+      	rows="1" 
+      	name="categoria" 
+      	placeholder="categoria"></textarea>
+  	</div>
   	<div>
   		<button type="submit" name="upload">SUBIR</button>
   	</div>
   </form>
 </div>
+
+
 </body>
 </html>
-
-
-<?php
-//footer
-include_once('footer.php');
-?>
