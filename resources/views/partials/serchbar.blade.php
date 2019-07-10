@@ -3,7 +3,7 @@
   <!-- serchbar -->
   <div id="arriba">
   <a href="/" class="imagen_logo">
- <img class="imagen_logo"  src="img/Logo.png" alt="">  
+ <img class="imagen_logo"  src="/img/Logo.png" alt="">  
   </a>
     <div class="buscar-caja">
       <input type="search" name="buscar" class="buscar-txt" placeholder="Buscar..." />

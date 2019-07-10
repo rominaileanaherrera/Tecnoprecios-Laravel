@@ -1,7 +1,5 @@
 @extends('layout.main')
 
-
-
 @section('content')
 {{-- // navbar --}}
 @include('partials.navbar')

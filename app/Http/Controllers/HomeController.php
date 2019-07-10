@@ -24,7 +24,11 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $products = Product::all();
+        $products = Product::randomize(3)->get();
+        
+     
+        
         return view('home')->with ('products',$products);
     }
+    
 }

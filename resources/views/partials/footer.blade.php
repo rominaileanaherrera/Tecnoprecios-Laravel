@@ -23,7 +23,7 @@
     <!-- Grid column -->
     <div class="col-md-2 mb-3">
       <h6 class="text-uppercase font-weight-bold">
-        <a href="/subirproductos">NOSOTROS</a>
+        <a href="/subirproductos/new">NOSOTROS</a>
       </h6>
     </div>
     <!-- Grid column -->
@@ -88,3 +88,5 @@
 
     </div>
 </div>
+ <script src="/js/master.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>

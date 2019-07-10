@@ -1,49 +1,3 @@
-{{-- 
-
-// poner el mensaje que luego guardo para ver si estoy subiendo bien 
-$msg = "";
-
-  // si aprietan el boton de upload
-  if (isset($_POST['upload'])) {
-		
-  	// agarrar el nombre de la imagen 
-		$image = $_FILES['image']['name'];
-		
-  	// agarrar el texto 
-		$title = $_POST['title'];
-
-			// agarrar el texto 
-			$price = $_POST['price'];
-
-  	// donde guardamos la imagen 
-		$target = "img/".basename($image);
- 
-
-		$sql = "INSERT INTO products (image, title, price,id_class) VALUES ('$image', '$title', '$price','$categoria')";
-		$query= $pdo ->prepare($sql);
-		$query -> execute();
-
-		
-
-		// var_dump ($query);
-		// exit;
-	
-
-// var_dump ($sql); 
-// exit;
-
-		
-//  chequeo que todos los datos esten subidos con el tmp que es el nombre temporario en el que se encuentra 
-		
-		if (move_uploaded_file($_FILES['image']['tmp_name'], $target)) {
-			$msg = "Imagen subida con exito";
-		}else{
-			$msg = "Imagen no subida";
-		}
-	}
-	// var_dump ($msg);
- --}}
-
 
 <!doctype html>
 <html lang="es">
@@ -65,7 +19,7 @@ $msg = "";
 @foreach ($products as $product ) 
 {{-- $pi={{$product->image}} --}}
 <figure>
-          <img src="/img/{{$product->image}}">
+          <img src="/storage/img/{{$product->image}}">
 
           <figcaption>{{$product->tittle}}</figcaption>
           <span class="price">${{$product->price}}</span>
@@ -81,17 +35,19 @@ $msg = "";
 </div>
 
   
-  <form method="POST" action="subirproductos.php" enctype="multipart/form-data">
-  	<input type="hidden" name="size" value="1000000">
-  	<div>
-  	  <input type="file" name="image">
+  <form method="POST" action="{{ url('/subirproductos') }}" enctype="multipart/form-data">
+  	
+		 @csrf    
+  	<div>   
+  	  <input type="file" name="image"  value="{{ old('image') }}">
   	</div>
   	<div>
       <textarea 
       	id="text" 
       	cols="40" 
       	rows="1" 
-      	name="title" 
+      	name="tittle" 
+			  value="{{ old('tittle') }}"
       	placeholder="titulo del producto"></textarea>
   	</div>
 		<div>
@@ -99,22 +55,26 @@ $msg = "";
       	id="text" 
       	cols="40" 
       	rows="1" 
+				value="{{ old('price') }}"
       	name="price" 
       	placeholder="precio"></textarea>
   	</div>
-		<div>
-      <textarea 
-      	id="text" 
-      	cols="40" 
-      	rows="1" 
-      	name="categoria" 
-      	placeholder="categoria"></textarea>
-  	</div>
+<div >
+        <select name="id_class">
+            @foreach($categories as $category )
+                <option value="{{ $category->id }}" {{ old('id_class') === $category->id ? 'selected' : '' }}>
+                    {{ $category->name }}
+                </option>
+            @endforeach
+        </select>
+    </div>
+		<br>
   	<div>
   		<button type="submit" name="upload">SUBIR</button>
   	</div>
   </form>
 </div>
+<br>
 
 
 </body>

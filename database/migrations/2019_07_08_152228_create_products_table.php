@@ -18,7 +18,7 @@ class CreateProductsTable extends Migration
             $table->timestamps();
             $table->string('image');
             $table->string('tittle');
-            $table->integer('price');
+            $table->float('price');
             $table->integer('id_class');
             $table->softDeletes('deleted_at')->nullable;
         });

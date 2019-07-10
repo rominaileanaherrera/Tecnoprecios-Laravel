@@ -15,6 +15,8 @@
 Route::get('/', 'HomeController@index');
 Route::get('/faq', 'FaqController@index');
 Route::get('/subirproductos', 'SubirproductosController@index');
+Route::get('/subirproductos/new', 'SubirproductosController@create');
+Route::post('/subirproductos', 'SubirproductosController@store');
 
 Auth::routes();
 
