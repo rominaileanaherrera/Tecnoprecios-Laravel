@@ -16,7 +16,7 @@
       <!-- <li>  <a href=""><img src="img/bag.png" alt=""> </a>   </li> -->
       <!--  <li class="d-flex"><a href="login.php" target="_blank" class="formato btn btn-primary btn-sm ml-auto ">Login</a></li>-->
       <li class="d-flex">
-        <a href="registro-o-login.php" target="_blank" class="formato btn btn-primary btn-sm ml-auto micuenta"><i class="far fa-user-circle"></i> Ingresar a Mi Cuenta</a>
+        <a href="/login" target="_blank" class="formato btn btn-primary btn-sm ml-auto micuenta"><i class="far fa-user-circle"></i> Ingresar a Mi Cuenta</a>
       </li>
     </ul>
     <!-- <img class="imagen_bag" src="img/bag.png" alt="">  -->
