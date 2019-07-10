@@ -17,8 +17,8 @@
 
 
 {{-- // productospaginaincio --}}
-deberiamos llamar a los productos pero tiene php y base de datos.
-{{-- @include('partials.productos-inicio') --}}
+
+@include('partials.productos-inicio')
 
 @include('partials.script')
 

@@ -14,6 +14,7 @@
 
 Route::get('/', 'HomeController@index');
 Route::get('/faq', 'FaqController@index');
+Route::get('/subirproductos', 'SubirproductosController@index');
 
 Auth::routes();
 
