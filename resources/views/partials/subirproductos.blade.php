@@ -32,6 +32,18 @@
 </section>
 
 
+{{-- @if {{$product->id_class}} == 2  {
+@foreach ($products as $product ) 
+ <figure>
+          <img src="/storage/img/{{$product->image}}">
+
+          <figcaption>{{$product->tittle}}</figcaption>
+          <span class="price">${{$product->price}}</span>
+          <a class="button" href="#">Comprar ahora</a>
+ </figure>
+@endforeach 
+} --}}
+
 </div>
 
   
@@ -75,6 +87,7 @@
   </form>
 </div>
 <br>
+ <a href="/editar" >Editar Productos</a>
 
 
 </body>

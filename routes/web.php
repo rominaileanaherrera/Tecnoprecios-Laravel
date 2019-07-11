@@ -18,6 +18,11 @@ Route::get('/subirproductos', 'SubirproductosController@index');
 Route::get('/subirproductos/new', 'SubirproductosController@create');
 Route::post('/subirproductos', 'SubirproductosController@store');
 
+Route::get('/editar', 'EditarController@index');
+Route::get('/show/{id}', 'EditarController@show'); 
+Route::get('/delete/{id}', 'EditarController@destroy');
+Route::put('/update/{id}', 'EditarController@update');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
