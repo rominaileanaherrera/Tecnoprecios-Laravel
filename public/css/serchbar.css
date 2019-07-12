@@ -1,4 +1,7 @@
 /* searchbar_iphone */
+.buscar-form{
+  margin-top: 1%;
+}
 .search {
   width: 100%;
   position: relative

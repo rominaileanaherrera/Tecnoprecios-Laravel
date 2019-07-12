@@ -1,11 +1,14 @@
 </div>
-
+ <br>
+{{-- {{dd($product)}} --}}
   
-  <form method="POST" action="{{ url('/update/{{$product->id}}') }}" enctype="multipart/form-data">
+
+  <form method="POST" action="{{ url('/update',$product->id) }}" enctype="multipart/form-data">
   	
 		 @csrf    
+         {{ method_field('PUT') }}
   	<div>   
-  	  <input type="file" name="image"  value="{{ old('image') }}">
+  	  <input type="file" name="image"  value="{{$product->image}}">
   	</div>
   	<div>
       <textarea 
@@ -13,7 +16,7 @@
       	cols="40" 
       	rows="1" 
       	name="tittle" 
-		value="{{ old('tittle') }}"
+		value="{{$product->tittle}}"
       	placeholder="{{$product->tittle}}"></textarea>
   	</div>
 		<div>
@@ -21,7 +24,7 @@
       	id="text" 
       	cols="40" 
       	rows="1" 
-		value="{{ old('price') }}"
+		value="{{$product->price}}"
       	name="price" 
       	placeholder="{{$product->price}}"></textarea>
   	</div>
@@ -31,7 +34,7 @@
       	id="text" 
       	cols="40" 
       	rows="1" 
-		value="{{ old('id_class') }}"
+		value="{{$product->id_class}}"
       	name="id_class" 
       	placeholder="Numero de clase:{{$product->id_class}}"></textarea>
   	</div>
@@ -42,7 +45,8 @@
   </form>
 </div>
 <br>
-
+<a href="/editar" >Editar Productos</a>
+ <br>
 
 </body>
 </html>

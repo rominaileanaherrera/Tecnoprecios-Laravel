@@ -51,7 +51,7 @@ class SubirproductosController extends Controller
         
         // $request->file('image')->move(base_path().'/public/img/',$products->image);
        
-        return redirect('home');
+        return redirect('subirproductos/new');
        
       
     }
