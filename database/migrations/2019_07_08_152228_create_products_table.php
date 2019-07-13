@@ -19,7 +19,7 @@ class CreateProductsTable extends Migration
             $table->string('image');
             $table->string('tittle');
             $table->float('price');
-            $table->integer('id_class');
+            $table->integer('category_id');
             $table->softDeletes('deleted_at')->nullable;
         });
     }

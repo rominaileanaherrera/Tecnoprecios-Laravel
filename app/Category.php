@@ -11,7 +11,12 @@ class category extends Model
   protected $timestamp = true;
   protected $guardar = [];
 
+
+
+public function Product(){
+  return $this->hasMAny("App\Product","category_id");
 }
 
+}
 
 
