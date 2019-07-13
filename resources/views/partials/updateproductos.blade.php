@@ -34,9 +34,9 @@
       	id="text" 
       	cols="40" 
       	rows="1" 
-		value="{{$product->id_class}}"
-      	name="id_class" 
-      	placeholder="Numero de clase:{{$product->id_class}}"></textarea>
+		value="{{$product->category_id}}"
+      	name="category_id" 
+      	placeholder="Numero de clase:{{$product->category_id}}"></textarea>
   	</div>
 		<br>
   	<div>

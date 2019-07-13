@@ -14,6 +14,7 @@
 
 Route::get('/', 'HomeController@index');
 Route::get('/search', 'HomeController@search')->name('product.search');
+Route::get('/tv', 'HomeController@indextv')->name('tv');
 Route::get('/productonoexistente', 'HomeController@search')->name('product.search');
 Route::get('/faq', 'FaqController@index');
 Route::get('/subirproductos', 'SubirproductosController@index');

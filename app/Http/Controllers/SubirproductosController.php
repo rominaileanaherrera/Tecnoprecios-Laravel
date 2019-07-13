@@ -33,7 +33,7 @@ class SubirproductosController extends Controller
             'image'=> 'image|max:1999|required',
             'tittle'=> 'required',
             'price'=> 'required',
-            'id_class'=> 'required'
+            'category_id'=> 'required'
 
        ];
       $this->validate($request,$reglas);
@@ -44,12 +44,13 @@ class SubirproductosController extends Controller
    Product::create([
        'tittle'=> $request['tittle'],
        'price'=> $request['price'],
-       'id_class'=> $request['id_class'],
+       'category_id'=> $request['category_id'],
        'image'=>$nombreArchivo
        ]);
 
+      
         
-        // $request->file('image')->move(base_path().'/public/img/',$products->image);
+        
        
         return redirect('subirproductos/new');
        

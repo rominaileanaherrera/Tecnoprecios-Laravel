@@ -7,7 +7,7 @@
 </head>
 <body>
 
-
+ 
 
 <div id="content">
 
@@ -72,9 +72,9 @@
       	placeholder="precio"></textarea>
   	</div>
 <div >
-        <select name="id_class">
+        <select name="category_id">
             @foreach($categories as $category )
-                <option value="{{ $category->id }}" {{ old('id_class') === $category->id ? 'selected' : '' }}>
+                <option value="{{ $category->id }}" {{ old('category_id') === $category->id ? 'selected' : '' }}>
                     {{ $category->name }}
                 </option>
             @endforeach
@@ -87,8 +87,8 @@
   </form>
 </div>
 <br>
- <a href="/editar" >Editar Productos</a>
-
+<a href="/editar" >Editar Productos</a>
+<br>
 
 </body>
 </html>

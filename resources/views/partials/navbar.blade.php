@@ -22,7 +22,7 @@
               <a class="nav-link" href="modificar_productos.php">modificar_productos</a>
             </li> -->
             <li class="nav-item">
-              <a class="nav-link" href="paginaproductos.php">Tv</a>
+              <a class="nav-link" href="/tv">Tv</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="paginaproductos.php">Lavarropas</a>

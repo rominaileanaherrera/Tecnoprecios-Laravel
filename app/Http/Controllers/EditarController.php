@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Product;
 
+
 class EditarController extends Controller
 {
     public function index()
@@ -35,7 +36,7 @@ class EditarController extends Controller
             'image'=> 'image|max:1999|required',
             'tittle'=> 'required',
             'price'=> 'required',
-            'id_class'=> 'required'
+            'category_id'=> 'required'
        ];
 
       $this->validate($request,$reglas);
@@ -54,11 +55,11 @@ class EditarController extends Controller
        $productoActualizado = Product::find($id);
        $productoActualizado->tittle = $request->input("tittle");
        $productoActualizado->price = $request->input("price");
-       $productoActualizado->id_class = $request->input("id_class");
+       $productoActualizado->category_id = $request->input("category_id");
        $productoActualizado->image = $nombreArchivo;
        $productoActualizado->save();
 
-       
+
        return redirect('editar');
        
     }

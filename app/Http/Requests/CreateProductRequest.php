@@ -26,7 +26,7 @@ class CreateProductRequest extends FormRequest
         return [
             'title' => 'required',
             'price' => 'required',
-            'id_class' => 'required',
+            'category_id' => 'required',
         ];
     }
 }

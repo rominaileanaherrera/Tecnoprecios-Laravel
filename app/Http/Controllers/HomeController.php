@@ -35,7 +35,7 @@ class HomeController extends Controller
     public function search(Request $request)
     {
         $input = $request->input('buscar');
-        $products = Product::where('tittle','LIKE','%'.$input.'%')->paginate(2);
+        $products = Product::where('tittle','LIKE','%'.$input.'%')->paginate(6);
         if(count($products) > 0)
         return view('serchproducs')->with("products", $products);
         else return view('productonoexistente')->withMessage('No tenemos ese producto disculpe!');
@@ -44,4 +44,10 @@ class HomeController extends Controller
            
     }
     
+    public function indextv()
+    {
+        $products = Product::where('category_id','=','2')->paginate(6);
+        return view('serchproducs')->with("products", $products);
+    }
+
 }

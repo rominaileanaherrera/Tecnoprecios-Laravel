@@ -22,5 +22,5 @@
 </div>
 </section>
 
-
 </div>
+{{$products->links()}}
