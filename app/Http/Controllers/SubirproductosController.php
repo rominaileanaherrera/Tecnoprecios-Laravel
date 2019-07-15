@@ -44,17 +44,18 @@ class SubirproductosController extends Controller
    Product::create([
        'tittle'=> $request['tittle'],
        'price'=> $request['price'],
-       'category_id'=> $request['category_id'],
+       'category_id'=>$request['category_id'],
+    //    'category_id'=> $request['category_id'],
        'image'=>$nombreArchivo
        ]);
 
       
-        
-        
-       
+      
         return redirect('subirproductos/new');
        
       
     }
+
+
 }
 

@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="es">
 <head>
@@ -79,6 +78,7 @@
                 </option>
             @endforeach
         </select>
+		
     </div>
 		<br>
   	<div>

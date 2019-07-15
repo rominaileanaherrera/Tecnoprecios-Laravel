@@ -10,7 +10,7 @@ class Product extends Model
   protected $primaryKey = 'id';
   protected $timestamp = true;
   protected $guardar = [];
-  protected $fillable = ['image','tittle', 'price', 'category_id,'];
+  protected $fillable = ['image','tittle', 'price', 'category_id'];
 
   public function Category(){
     return $this->belongsTo("App\Category", "category_id");

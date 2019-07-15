@@ -12,10 +12,10 @@
 */
 
 
-Route::get('/', 'HomeController@index');
-Route::get('/search', 'HomeController@search')->name('product.search');
-Route::get('/tv', 'HomeController@indextv')->name('tv');
-Route::get('/productonoexistente', 'HomeController@search')->name('product.search');
+Route::get('/', 'MainController@index');
+Route::get('/search', 'MainController@search')->name('product.search');
+Route::get('/tv', 'MainController@indextv')->name('tv');
+Route::get('/productonoexistente', 'MainController@search')->name('product.search');
 Route::get('/faq', 'FaqController@index');
 Route::get('/subirproductos', 'SubirproductosController@index');
 Route::get('/subirproductos/new', 'SubirproductosController@create');
