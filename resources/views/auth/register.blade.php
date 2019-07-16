@@ -11,6 +11,8 @@
                 <div class="header">{{ __('Formulario de Registro') }}</div>
                 <br>
 
+                {{ $errors }}
+
                 <div class="body">
                     <form method="POST" action="{{ route('register') }}"enctype= "multipart/form-data">
                         @csrf
@@ -22,7 +24,7 @@
                                 <input id="name" type="text" class="formatoform btn btn-outline-primary @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
 
                                 @error('name')
-                                    <span class="invalid-feedback" role="alert">
+                                    <span role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
@@ -36,7 +38,7 @@
                                 <input id="email" type="email" class="formatoform btn btn-outline-primary @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
 
                                 @error('email')
-                                    <span class="invalid-feedback" role="alert">
+                                    <span role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
@@ -50,7 +52,7 @@
                                 <input id="password" type="password" class="formatoform btn btn-outline-primary @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
 
                                 @error('password')
-                                    <span class="invalid-feedback" role="alert">
+                                    <span role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror

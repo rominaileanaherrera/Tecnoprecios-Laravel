@@ -29,4 +29,4 @@ Route::put('/update/{id}', 'EditarController@update');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('/home', 'HomeController@index')->name('home');
