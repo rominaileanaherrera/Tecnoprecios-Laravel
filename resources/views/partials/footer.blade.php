@@ -39,7 +39,7 @@
     <!-- Grid column -->
     <div class="col-md-2 mb-3">
       <h6 class="text-uppercase font-weight-bold">
-        <a href="#!">CONTACTANOS</a>
+        <a href="/contactanos">CONTACTANOS</a>
       </h6>
     </div>
 

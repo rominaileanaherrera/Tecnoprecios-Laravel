@@ -50,4 +50,9 @@ class MainController extends Controller
         return view('serchproducs')->with("products", $products);
     }
 
+    public function contactanos()
+    {
+        return view('contactanos');
+    }
+
 }

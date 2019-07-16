@@ -13,6 +13,7 @@
 
 
 Route::get('/', 'MainController@index');
+Route::get('/contactanos', 'MainController@contactanos');
 Route::get('/search', 'MainController@search')->name('product.search');
 Route::get('/tv', 'MainController@indextv')->name('tv');
 Route::get('/productonoexistente', 'MainController@search')->name('product.search');
