@@ -6,7 +6,7 @@
        <h2>Administrar Productos</h2>
 
        
-         <div class="d-flex card col-12  __itempelicula" style="width: 28rem;">
+         <div class="d-flex card col-12  __itempelicula" style="width: 35rem;">
          <br>
          <a href="/subirproductos/new">Incluir Producto</a>
          <table class="table">

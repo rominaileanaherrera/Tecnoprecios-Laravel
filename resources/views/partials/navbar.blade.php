@@ -34,7 +34,7 @@
               <a class="nav-link" href="paginaproductos.php">Aire Acondicionado</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="paginaproductos.php">Contactanos</a>
+              <a class="nav-link" href="/contactanos">Contactanos</a>
               </span>
             </li>
             <li class="nav-item">

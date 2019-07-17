@@ -17,9 +17,9 @@
 <H2 class="CONTACT">CONTACT INFO</H2>
 <H3 class="colorverde">TecnoPrecios SA </H3>
 <p class="chi">
-email:info@tecnoprecios.com 
+Email: info@tecnoprecios.com 
 <br/>
-phone: (5411) 4123-6234
+Telefono: (5411) 4123-6234
 </p>
 <br>
 
