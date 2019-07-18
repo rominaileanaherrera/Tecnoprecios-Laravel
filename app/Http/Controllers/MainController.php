@@ -54,5 +54,9 @@ class MainController extends Controller
     {
         return view('contactanos');
     }
+    public function about()
+    {
+        return view('about');
+    }
 
 }

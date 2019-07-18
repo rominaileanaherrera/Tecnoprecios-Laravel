@@ -1,0 +1,39 @@
+
+  .info1 h2{
+    color: black;
+    font-size: 3em;
+    font-family: 'Pinyon Script', fantasy;
+    margin-bottom: -25px;
+  }
+  .info1 h3 {
+    font-size: 4em;
+    color: rgb(2, 121, 246);
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .infoempresa{
+      display: flex;
+      margin-top: 100px;
+      margin-bottom: 100px;
+    
+  }
+
+
+  
+
+  .info1 {
+      width: 65%;
+     text-align: center;
+     margin-left: 35%;
+  }
+
+  .info12 {
+      align-items: left;
+  }
+
+
+  .infoempresa img{
+      width: 75%
+  }

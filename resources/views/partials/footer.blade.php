@@ -12,18 +12,12 @@
     </div>
     <!-- Grid column -->
 
-    <!-- Grid column -->
-    <div class="col-md-2 mb-3">
-      <h6 class="text-uppercase font-weight-bold">
-        <a href="#!">PRODUCTOS</a>
-      </h6>
-    </div>
-    <!-- Grid column -->
 
     <!-- Grid column -->
     <div class="col-md-2 mb-3">
       <h6 class="text-uppercase font-weight-bold">
-        <a href="/subirproductos/new">NOSOTROS</a>
+        <a href="/about">NOSOTROS</a>
+        {{-- <a href="/subirproductos/new">NOSOTROS</a> --}}
       </h6>
     </div>
     <!-- Grid column -->
@@ -82,7 +76,7 @@
 
     <!-- Copyright -->
     <div class="row d-flex text-center justify-content-center mb-md-0 mb-4" id="footerAll">
-      <p> TECNOPRECIOS 2019-All rights reserved</p>
+      <p> </p>
     </div>
 </footer>
 
