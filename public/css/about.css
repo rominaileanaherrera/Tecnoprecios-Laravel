@@ -15,8 +15,8 @@
 
   .infoempresa{
       display: flex;
-      margin-top: 100px;
-      margin-bottom: 100px;
+      margin-top: 70px;
+      margin-bottom: 70px;
     
   }
 
@@ -26,7 +26,6 @@
   .info1 {
       width: 65%;
      text-align: center;
-     margin-left: 35%;
   }
 
   .info12 {
@@ -36,4 +35,33 @@
 
   .infoempresa img{
       width: 75%
+  }
+
+  @media  screen and  (max-width: 1200px) {
+    .infoempresa{
+        display: flex;
+        margin-top: 70px;
+        margin-bottom: 70px;
+        flex-direction: column;
+      
+    }
+    
+
+    @media  screen and  (max-width: 950px) {
+
+        .info1 h2{
+            color: black;
+            font-size: 1.5em;
+            font-family: 'Pinyon Script', fantasy;
+            margin-bottom: -15px;
+          }
+        .info1 h3 {
+            font-size: 2em;
+            color: rgb(2, 121, 246);
+            font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            text-transform: uppercase;
+          }
+        
+      }
   }

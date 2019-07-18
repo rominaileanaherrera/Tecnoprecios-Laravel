@@ -6,7 +6,9 @@
   width: 100%;
   position: relative
 }
-
+.formato{
+  border: 2px solid white;
+}
 .searchTerm {
   float: left;
   width: 100%;

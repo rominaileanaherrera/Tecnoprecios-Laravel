@@ -22,16 +22,16 @@
               <a class="nav-link" href="modificar_productos.php">modificar_productos</a>
             </li> -->
             <li class="nav-item">
-              <a class="nav-link" href="/tv">Tv</a>
+              <a class="nav-link" href="/tv">Tv´s</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="paginaproductos.php">Lavarropas</a>
+              <a class="nav-link" href="/telefono">Telefonos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="paginaproductos.php"> Heladera</a>
+              <a class="nav-link" href="/horno"> Hornos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="paginaproductos.php">Aire Acondicionado</a>
+              <a class="nav-link" href="/camara">Camaras</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/contactanos">Contactanos</a>

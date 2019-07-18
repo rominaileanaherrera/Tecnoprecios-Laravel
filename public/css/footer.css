@@ -1,6 +1,7 @@
 
   .footer{
     align-items: center;
+    margin-bottom: 0;
   }
   #footerIconos, #footerAll, #footerLinks{
     background-color:#0279f6;

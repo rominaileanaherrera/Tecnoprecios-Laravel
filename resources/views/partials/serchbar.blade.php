@@ -25,7 +25,8 @@
         </a>
         @else
           @admin()
-          <a href="{{ url('/subirproductos/new') }}">Nosotros</a>
+          <a href="{{ url('/subirproductos/new') }}"  class="formato btn btn-primary btn-sm ml-auto micuenta">Subir/Editar Productos</a>
+          <a href="{{ url('lo que sea de la vista de editar usuarios') }}"  class="formato btn btn-primary btn-sm ml-auto micuenta">Editar Usuarios</a>
           @endadmin
 
         <form method="post" action="{{ url('logout') }}">
