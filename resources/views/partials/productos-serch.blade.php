@@ -14,7 +14,7 @@
 
           <figcaption>{{$product->tittle}}</figcaption>
           <span class="price">${{$product->price}}</span>
-          <a class="button" href="#">Comprar ahora</a>
+          <a class="button" href="{{ url('/add-to-cart',$product->id) }}">Comprar ahora</a>
  </figure>
 
 @endforeach 

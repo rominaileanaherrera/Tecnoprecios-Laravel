@@ -32,6 +32,9 @@ Route::get('/delete/{id}', 'EditarController@destroy');
 Route::get('/update/{id}', 'EditarController@go');
 Route::put('/update/{id}', 'EditarController@update');
 
+Route::get('/add-to-cart/{id}', 'MainController@addToCard')->name('product.addToCard');
+Route::get('/productsCart', 'MainController@productsCart')->name('product.productsCart');
+Route::get('/remove/{id}', 'MainController@removeFromCard')->name('product.productsCart');
 Auth::routes();
 
 // Route::get('/home', 'HomeController@index')->name('home');

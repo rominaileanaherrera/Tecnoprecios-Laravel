@@ -38,7 +38,8 @@
               </span>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="paginaproductos.php"><i class="fas fa-shopping-cart"></i></a>
+              <a class="nav-link" href="/productsCart"><i class="fas fa-shopping-cart">
+              <span class="badge"> {{Session::has('cart') ? Session::get('cart')->totalitems:'' }}</span></i></a>
             </li>
           </ul>
 

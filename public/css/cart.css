@@ -1,0 +1,10 @@
+.finaltotal{
+    display: flex;
+    margin-right: 0;
+   }
+
+.listacart{
+    list-style-type:none;
+    display: flex;
+    justify-content: flex-start
+}
