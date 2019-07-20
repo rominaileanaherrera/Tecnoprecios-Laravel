@@ -101,14 +101,27 @@ class MainController extends Controller
         return view('productsCart',['products'=>$cart->products,'totalprice'=>$cart->totalprice]);
     }
 
-    public function removeFromCard(Request $request, $id )
+    public function removeFromCard($id )
     {
-        $product = Product::find($id);
-        $produ=[];
-        $produ-> add($product, $product->id);
-        $request->session()->forget('produ',$produ);
 
-    
+       $oldCard = Session::has('cart') ? Session::get('cart') : null;
+       $cart =new Cart($oldCard);
+       $cart->reduceBy1($id);
+
+       Session::put('cart',$cart);
     return view('productsCart',['products'=>$cart->products,'totalprice'=>$cart->totalprice]);
     }
+
+    public function removeFromCardAll($id )
+    {
+
+       $oldCard = Session::has('cart') ? Session::get('cart') : null;
+       $cart =new Cart($oldCard);
+       $cart->removeProduct($id);
+
+       Session::put('cart',$cart);
+    return view('productsCart',['products'=>$cart->products,'totalprice'=>$cart->totalprice]);
+    }
+
+    
 }
