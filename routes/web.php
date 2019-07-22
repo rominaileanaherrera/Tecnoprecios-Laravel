@@ -12,6 +12,12 @@
 */
 
 
+Route::get('/service/install', function() {
+	Artisan::call('storage:link');
+	echo "vamooop";
+	return redirect('/');
+});
+
 Route::get('/', 'MainController@index');
 Route::get('/contactanos', 'MainController@contactanos');
 Route::get('/about', 'MainController@about');
