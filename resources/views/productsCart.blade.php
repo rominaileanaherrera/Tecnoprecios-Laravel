@@ -12,7 +12,7 @@
                   <th>Cantidad</th>
                   <th>Producto</th>
                   <th>Precio</th>
-                  <th>Editar1</th>
+                  <th>Editar</th>
               </tr>
           </thead>
           <tbody>
