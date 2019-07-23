@@ -1,6 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
+<!-- <div class="logoRegistro"> 
+<img src="img/logoRegistro2.png" alt="logo">
+</div> -->
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -70,4 +73,6 @@
         </div>
     </div>
 </div>
+<script src="{{asset('js/login.js')}}"></script>
+
 @endsection

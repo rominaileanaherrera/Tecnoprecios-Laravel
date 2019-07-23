@@ -25,9 +25,16 @@
         </a>
         @else
           @admin()
-          <a href="{{ url('/subirproductos/new') }}"  class="formato btn btn-primary btn-sm ml-auto micuenta">Subir/Editar Productos</a>
+          <a href="{{ url('/subirproductos/new') }}"  class="formato btn btn-primary btn-sm ml-auto micuenta">Subir Productos</a>
+          <a href="{{ url('/editar') }}"  class="formato btn btn-primary btn-sm ml-auto micuenta">Editar Productos</a>
           <a href="{{ url('lo que sea de la vista de editar usuarios') }}"  class="formato btn btn-primary btn-sm ml-auto micuenta">Editar Usuarios</a>
+
           @endadmin
+      
+          <a href="{{ url('miPerfil') }}" class="formato btn btn-primary btn-sm ml-auto micuenta">
+          <i class="far fa-user-circle"></i> Mi Cuenta
+        </a>
+
 
         <form method="post" action="{{ url('logout') }}">
           @csrf

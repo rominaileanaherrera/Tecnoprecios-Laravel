@@ -44,4 +44,6 @@ Route::get('/remove/{id}', 'MainController@removeFromCard')->name('product.produ
 Route::get('/removeItem/{id}', 'MainController@removeFromCardAll')->name('product.productsCart');
 Auth::routes();
 
+Route::get('/miPerfil', 'MainController@profile');
+
 // Route::get('/home', 'HomeController@index')->name('home');

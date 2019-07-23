@@ -124,4 +124,8 @@ class MainController extends Controller
     }
 
     
+    public function Profile()
+    {
+        return view('miPerfil');
+    }
 }

@@ -4,6 +4,9 @@
 @endsection
 
 @section('content')
+<!-- <div class="logoRegistro"> 
+<img src="img/logoRegistro2.png" alt="logo">
+</div> -->
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -11,7 +14,7 @@
                 <div class="header">{{ __('Formulario de Registro') }}</div>
                 <br>
 
-                {{ $errors }}
+                <!-- {{ $errors }} -->
 
                 <div class="body">
                     <form method="POST" action="{{ route('register') }}"enctype= "multipart/form-data">
@@ -88,4 +91,5 @@
         </div>
     </div>
 </div>
+<script src="{{asset('js/register.js')}}"></script>
 @endsection
