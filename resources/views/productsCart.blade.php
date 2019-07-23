@@ -55,25 +55,9 @@
         (function(){function $MPC_load(){window.$MPC_loaded !== true && (function(){var s = document.createElement("script");s.type = "text/javascript";s.async = true;s.src = document.location.protocol+"//secure.mlstatic.com/mptools/render.js";var x = document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s, x);window.$MPC_loaded = true;})();}window.$MPC_loaded !== true ? (window.attachEvent ?window.attachEvent('onload', $MPC_load) : window.addEventListener('load', $MPC_load, false)) : null;})();
         </script> --}}
        
-     <?php  MercadoPago\SDK::setAccessToken('TEST-8787171978525568-072317-e2a6b95941b537a9d9fef9906cec9d26-48407809');
-     
-
-    // Crea un objeto de preferencia
-    $preference = new MercadoPago\Preference();
-
-    // Crea un ítem en la preferencia
-    foreach ($products as $product) {
-    $item = new MercadoPago\Item();
-    $item->title = $product['product']['tittle'];
-    $item->quantity = $product['qty'];
-    $item->unit_price = $totalprice;
-    $preference->items = array($item);
-    $preference->save();
-    }
-   
-     ?>
+    
         
-        <a class="btn btn-primary active" href="<?php echo $preference->init_point; ?>">Pagar con Mercado Pago</a>
+        <a class="btn btn-primary active" href="<?= $init; ?>">Pagar con Mercado Pago</a>
 
         <br>
         <br>

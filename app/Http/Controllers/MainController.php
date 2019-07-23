@@ -88,7 +88,32 @@ class MainController extends Controller
         }
         $oldCard= Session::get ('cart');
         $cart = new Cart( $oldCard);
-        return view('productsCart',['products'=>$cart->products,'totalprice'=>$cart->totalprice]);
+
+        \MercadoPago\SDK::setAccessToken('TEST-8787171978525568-072317-e2a6b95941b537a9d9fef9906cec9d26-48407809');
+     
+
+        // Crea un objeto de preferencia
+        $preference = new \MercadoPago\Preference();
+
+        // Crea un ítem en la preferencia
+        $items=[];
+
+        foreach ($cart->products as $product){
+            $item = new \MercadoPago\Item();
+            $item->title = $product['product']['tittle'];
+            $item->quantity = $product['qty'];
+            $item->unit_price = $product['price'];
+            $items[]= $item;
+        }
+
+        $preference->items = $items;
+        $preference->save();
+
+        return view('productsCart',[
+            'products'=>$cart->products,
+            'totalprice'=>$cart->totalprice,
+            'init'=>$preference->init_point,
+        ]);
     }
 
     public function removeFromCard($id )
