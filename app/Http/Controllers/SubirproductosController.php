@@ -38,7 +38,7 @@ class SubirproductosController extends Controller
        ];
       $this->validate($request,$reglas);
        if($request->has('image')){
-       $rutaArchivo = $request['image']->store('img','public');
+       $rutaArchivo = $request['image']->storepublicly('public/img');
        $nombreArchivo= basename($rutaArchivo);
    }
    Product::create([
@@ -46,7 +46,7 @@ class SubirproductosController extends Controller
        'price'=> $request['price'],
        'category_id'=>$request['category_id'],
     //    'category_id'=> $request['category_id'],
-       'image'=>$nombreArchivo
+       'image'=>'public/img/'.$nombreArchivo,
        ]);
 
       

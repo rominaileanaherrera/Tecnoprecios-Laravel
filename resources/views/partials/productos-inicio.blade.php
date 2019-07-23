@@ -11,7 +11,7 @@
 @foreach ($products as $product ) 
 {{-- $pi={{$product->image}} --}}
 <figure>
-          <img src="/storage/img/{{$product->image}}">
+          <img src="{{ Storage::url($product->image) }}">
 
           <figcaption>{{$product->tittle}}</figcaption>
           <span class="price">${{$product->price}}</span>
