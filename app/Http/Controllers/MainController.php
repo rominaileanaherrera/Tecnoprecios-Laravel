@@ -17,6 +17,13 @@ class MainController extends Controller
     public function __construct()
     {
 //        $this->middleware('guest');
+
+        $this->mapCategories = [
+            'tv' => 2,
+            'telefono' => 1,
+            'horno' => 3,
+            'camara' => 4,
+        ];
     }
 
     /**
@@ -46,29 +53,12 @@ class MainController extends Controller
            
     }
     
-    public function indextv()
+    public function home($category)
     {
-        $products = Product::where('category_id','=','2')->paginate(3);
+        $id = $this->mapCategories[$category];
+        $products = Product::where('category_id','=', $id)->paginate(3);
         return view('serchproducs')->with("products", $products);
     }
-    public function indextelefono()
-    {
-        $products = Product::where('category_id','=','1')->paginate(3);
-        return view('serchproducs')->with("products", $products);
-    }
-    public function indexhorno()
-    {
-        $products = Product::where('category_id','=','3')->paginate(3);
-        return view('serchproducs')->with("products", $products);
-    }
-    public function indexcamara()
-    {
-        $products = Product::where('category_id','=','4')->paginate(3);
-        return view('serchproducs')->with("products", $products);
-    }
-
-
-
 
     public function contactanos()
     {

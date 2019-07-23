@@ -22,10 +22,7 @@ Route::get('/', 'MainController@index');
 Route::get('/contactanos', 'MainController@contactanos');
 Route::get('/about', 'MainController@about');
 Route::get('/search', 'MainController@search')->name('product.search');
-Route::get('/tv', 'MainController@indextv')->name('tv');
-Route::get('/telefono', 'MainController@indextelefono')->name('telefono');
-Route::get('/horno', 'MainController@indexhorno')->name('horno');
-Route::get('/camara', 'MainController@indexcamara')->name('camara');
+
 Route::get('/productonoexistente', 'MainController@search')->name('product.search');
 Route::get('/faq', 'FaqController@index');
 Route::get('/subirproductos', 'SubirproductosController@index');
@@ -47,3 +44,5 @@ Auth::routes();
 Route::get('/miPerfil', 'MainController@profile');
 
 // Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/{category}', 'MainController@home');
