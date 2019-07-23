@@ -13,7 +13,7 @@
 
     <br>
     <p>
-    <img  id="sesion" src="{{asset('storage/avatars/'.Auth::User()->avatar)}}" alt="Avatar" >
+    <img  id="sesion" src="{{ Storage::url(Auth::User()->avatar) }}"  >
     </p>
     
    <br>
