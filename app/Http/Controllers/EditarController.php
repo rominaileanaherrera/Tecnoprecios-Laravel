@@ -41,7 +41,7 @@ class EditarController extends Controller
 
       $this->validate($request,$reglas);
        if($request->has('image')){
-       $rutaArchivo = $request['image']->store('img','public');
+       $rutaArchivo = $request['image']->storepublicly('public/img');
        $nombreArchivo= basename($rutaArchivo);
    }
 //    Product::update([
@@ -56,7 +56,7 @@ class EditarController extends Controller
        $productoActualizado->tittle = $request->input("tittle");
        $productoActualizado->price = $request->input("price");
        $productoActualizado->category_id = $request->input("category_id");
-       $productoActualizado->image = $nombreArchivo;
+       $productoActualizado->image = 'public/img/'.$nombreArchivo;
        $productoActualizado->save();
 
 
