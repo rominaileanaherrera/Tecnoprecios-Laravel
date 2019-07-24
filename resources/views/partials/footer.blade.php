@@ -78,6 +78,9 @@
     <div class="row d-flex text-center justify-content-center mb-md-0 mb-4" id="footerAll">
       <p> </p>
     </div>
+    <section id='backtop' class="backtop">
+                <a href="#main-header"><i class="fas fa-angle-double-up"></i></a>
+            </section>
 </footer>
 
     </div>
