@@ -3,6 +3,7 @@
 {{-- // navbar --}}
 @include('partials.navbar')
 <main>
+        @admin()
        <h2>Administrar Productos</h2>
 
        
@@ -35,6 +36,8 @@
         </table>
 
          </div>
-
+       
+    
+         @endadmin
      </main>
      @endsection()

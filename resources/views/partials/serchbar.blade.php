@@ -27,7 +27,6 @@
           @admin()
           <a href="{{ url('/subirproductos/new') }}"  class="formato btn btn-primary btn-sm ml-auto micuenta">Subir Productos</a>
           <a href="{{ url('/editar') }}"  class="formato btn btn-primary btn-sm ml-auto micuenta">Editar Productos</a>
-          <a href="{{ url('/userEdit') }}"  class="formato btn btn-primary btn-sm ml-auto micuenta">Editar Usuarios</a>
 
           @endadmin
       
