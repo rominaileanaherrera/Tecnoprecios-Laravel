@@ -22,7 +22,7 @@
                             <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Nombre') }}</label>
 
                             <div class="col-md-6">
-                                <input id="name" type="text" class=" form-control formatoform btn btn-outline-primary" name="name" value="{{ old('name') }}"  >
+                                <input id="name" type="text" class=" form-control formatoform btn btn-outline-primary" name="name" value="{{ old('name') }}" autofocus >
 
                                 @if ($errors->has('name'))
                                     <strong>{{ $errors->first('name') }}</strong>
@@ -102,5 +102,5 @@
         </div>
     </div>
 </div>
-<script src="{{asset('js/register.js')}}"></script>
+<script src="{{asset('js/register2.js')}}"></script>
 @endsection
