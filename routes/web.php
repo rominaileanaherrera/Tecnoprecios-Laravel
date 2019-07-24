@@ -46,3 +46,9 @@ Route::get('/miPerfil', 'MainController@profile');
 // Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/{category}', 'MainController@home');
+
+Route::get('/editarUsuarios', 'UserController@index');
+//Route::get('/show/{id}', 'EditarController@show'); 
+//Route::get('/delete/{id}', 'EditarController@destroy');
+//Route::get('/update/{id}', 'EditarController@go');
+//Route::put('/update/{id}', 'EditarController@update');

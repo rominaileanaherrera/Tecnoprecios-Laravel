@@ -187,8 +187,12 @@ class MainController extends Controller
     }
 
     
-    public function Profile()
-    {
+    public function Profile(){
+    
         return view('miPerfil');
+    }
+
+    public function editarUsuarios(){
+    return view('userEdit');
     }
 }
