@@ -9,5 +9,5 @@ Cuando lo descarguen:
    collation: utf8mb4_unicode_ci
    
    Si cuando corren el migrate les tira un error avisen y les paso el tutorial!!!
-   ODIO LARAVEL
+   
    
